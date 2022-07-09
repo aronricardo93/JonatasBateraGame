@@ -1,0 +1,23 @@
+#titulo{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #555555;
+    padding: 50px 0;
+    font-size: 50px;
+}
+
+.sprite{
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    margin-left: 10%;
+}
+
+.game-board{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    border: 1px solid #444;
+    background: linear-gradient(#0099FF, #FFFFFF 80%);
+}
