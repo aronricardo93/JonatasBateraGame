@@ -23,7 +23,7 @@ body{
 
 .sprite-jonatas{
     position: absolute;
-    width: 80px;
+    width: 50px;
     bottom: 0;
     margin-left: 25%;
 }
@@ -38,9 +38,9 @@ body{
 .obstaculo{
     position: absolute;
     bottom: 0;
-    width: 150px;
+    width: 120px;
     height: 80px;
-    animation: obstaculo-animation 3s infinite linear;
+    animation: obstaculo-animation 1.5s infinite linear;
 }
 
 .jump{
@@ -64,9 +64,6 @@ body{
         bottom: 180px;
     }
     50%{
-        bottom: 180px;
-    }
-    60%{
         bottom: 180px;
     }
     80%{
