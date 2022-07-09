@@ -1,16 +1,14 @@
+body{
+    background: #000;
+}
+
 #titulo{
     text-align: center;
     font-weight: bold;
-    text-shadow: 5px 5px 5px #555555;
+    text-shadow: 5px 5px 5px #999;
     padding: 50px 0;
     font-size: 50px;
-}
-
-.sprite{
-    position: absolute;
-    width: 50px;
-    bottom: 0;
-    margin-left: 10%;
+    color: #FFFFFF;
 }
 
 .game-board{
@@ -20,4 +18,61 @@
     height: 500px;
     border: 1px solid #444;
     background: linear-gradient(#0099FF, #FFFFFF 80%);
+    overflow: hidden;
+}
+
+.sprite-jonatas{
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    margin-left: 25%;
+}
+
+.sprite-pastor{
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    margin-left: 6%;
+}
+
+.obstaculo{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 80px;
+    animation: obstaculo-animation 3s infinite linear;
+}
+
+.jump{
+    animation: jump 1s ease-in-out;
+}
+
+@keyframes obstaculo-animation{
+    from{
+        right: -60px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    80%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0;
+    }
 }
